@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import DisplayContent from "./components/DisplayContent";
+import SearchBar from "./components/SearchBar";
+import "./App.css";
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState("react");
+
+  const handleSearchChange = (key) => {
+    setSearchTerm(key);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+      <SearchBar initSearch={searchTerm} onSearchChange={handleSearchChange} />
+
+      <div className="jumbotron">
+        <DisplayContent search={searchTerm}></DisplayContent>
+
+        <hr className="my-4"></hr>
+        <a href="https://www.linkedin.com/in/matt1931/">
+          <h5 className="float-right">by Matt Lash</h5>
         </a>
-      </header>
+      </div>
     </div>
   );
 }
