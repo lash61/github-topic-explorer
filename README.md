@@ -27,11 +27,20 @@ Best of luck
 
 ## Dev Notes
 
-* Leave any technical notes on any libraries or tools you chose to use, the more detail the better.
+* Use react-dotenv to load environment variable (`REACT_APP_GITHUB_API_TOKEN`)
+* Create functional components to search & display topics
+* Apollo Client for Query and Data Management
+* Bootstrap to make the page looks professional
+* Font-Awesome for stars and animation
+
 
 ### How to run app & test
 
-* Leave instruction on how to run and test your app here
+* Install dependencies by running the command `yarn install`
+* Open the page by running the command `yarn start`
+* Default search term is `react`
+* Type the topic in the Search Bar on the top right
+* Click on each related topic elements to search new topic
 
 
 ### Future Improvements
@@ -43,3 +52,4 @@ Feel free to elaborate on how you would improve any of the following topics
 * Refactoring:
 
 * Additional Features:
+  * Current GraphQL query is retrieved the first 10 topics. Adding pagination feature can make it dynamic.
