@@ -41,6 +41,7 @@ Best of luck
 * Default search term is `react`
 * Type the topic in the Search Bar on the top right
 * Click on each related topic elements to search new topic
+* Run tests by command `yarn test`
 
 
 ### Future Improvements
