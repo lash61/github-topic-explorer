@@ -36,7 +36,7 @@ const GET_GIT_TOPICS = gql`
   }
 `;
 
-function SearchResult(props) {
+export const SearchResult = (props) => {
   const { searchTerm, onChange } = props;
   const [errMsg, setErrMsg] = useState(null);
 
@@ -97,6 +97,4 @@ function SearchResult(props) {
         ))}
     </>
   );
-}
-
-export default SearchResult;
+};

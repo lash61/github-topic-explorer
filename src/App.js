@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-import DisplayContent from "./components/DisplayContent";
-import SearchBar from "./components/SearchBar";
+import { DisplayContent, SearchBar } from "./components";
 import "./App.css";
 
 function App() {

@@ -1,6 +1,7 @@
+import React from "react";
 import { useState } from "react";
 
-function SearchBar(props) {
+export const SearchBar = (props) => {
   const { title, initSearch, onSearchChange } = props;
   const [searchTerm, setSearchTerm] = useState(initSearch);
 
@@ -33,6 +34,4 @@ function SearchBar(props) {
       </div>
     </nav>
   );
-}
-
-export default SearchBar;
+};

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import SearchResult from "./SearchResult";
+import { SearchResult } from "../../components";
 
-function DisplayContent(props) {
+export const DisplayContent = (props) => {
   const { search } = props;
   const [searchTerm, setSearchTerm] = useState(search);
 
@@ -26,6 +26,4 @@ function DisplayContent(props) {
       <SearchResult searchTerm={searchTerm} onChange={handleChange} />
     </div>
   );
-}
-
-export default DisplayContent;
+};
